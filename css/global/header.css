@@ -1,0 +1,145 @@
+.ponto {
+  color: #ab292c;
+}
+
+.icon h1 {
+  color: white;
+  margin-right: 60px;
+  position: relative;
+}
+
+.icon h1::before {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  transform: rotate(3deg);
+  left: -50px;
+  top: -32px;
+  width: 72px;
+  height: 72px;
+  background: url(/img/planet.svg);
+}
+
+.icon h1:hover::before {
+  transform: rotate(10deg);
+  transition: 0.3s;
+}
+
+.header {
+  padding-top: 32px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-menu-items {
+  gap: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-menu-items .sub {
+  position: relative;
+}
+
+.nav-menu-items .sub::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0px;
+  background: #ab292c;
+  position: absolute;
+  margin-top: 3px;
+  transition: 0.3s;
+}
+
+.nav-menu-items .sub:hover:after {
+  width: 100%;
+}
+
+.nav-menu-btn {
+  background-color: #ab292c;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font: 700 1rem/1.5 "Poppins", sans-serif;
+}
+
+.nav-menu-btn:hover {
+  background-color: #780006;
+}
+
+.btn-mobile {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .btn-mobile {
+    display: flex;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: none;
+    background: none;
+  }
+
+  #hamburger {
+    border-top: 2px solid;
+    display: block;
+    width: 20px;
+  }
+
+  #hamburger::after,
+  #hamburger::before {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 20px;
+    margin-top: 5px;
+    background: currentColor;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+
+  .nav-menu-items {
+    margin-top: 89px;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 50px;
+    display: none;
+  }
+  #nav.active .nav-menu-items {
+    display: flex;
+    background-color: black;
+  }
+
+  .nav-menu-items .sub::after,
+  .icon h1:hover::before {
+    display: none;
+  }
+
+  .icon h1::before {
+    display: none;
+  }
+}
