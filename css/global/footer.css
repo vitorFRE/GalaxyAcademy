@@ -1,0 +1,44 @@
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 150px;
+  margin-top: 200px;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.redes {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.footer-empresa h3,
+.footer-contato h3 {
+  font: 700 1.875rem/1 "Poppins", sans-serif;
+}
+
+.footer-empresa li a,
+.footer-contato li a {
+  font: 500 1.125rem/1 "Poppins", sans-serif;
+  color: #b2b2b2;
+}
+
+.footer-empresa li a:hover,
+.footer-contato li a:hover {
+  color: white;
+}
+
+.footer-empresa li,
+.footer-contato li {
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  footer {
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 100px;
+  }
+}
