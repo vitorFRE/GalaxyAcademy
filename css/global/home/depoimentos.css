@@ -1,6 +1,15 @@
 .depoimentos {
   text-align: center;
 }
+
+.depoimento img {
+  transition: all 0.4s 0s ease;
+}
+
+.depoimento img:hover {
+  transform: scale(1.2);
+}
+
 .depoimentos h1 {
   margin-top: 150px;
   font: 700 3rem/1 "Poppins", sans-serif;
