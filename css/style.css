@@ -7,6 +7,7 @@
 /* Home */
 @import url(./global/home/introducao.css);
 @import url(./global/home/planos.css);
+@import url(./global/home/depoimentos.css);
 
 /* Utilidades */
 @import url(./util/componentes.css);
