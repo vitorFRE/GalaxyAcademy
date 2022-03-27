@@ -39,6 +39,14 @@ footer {
   margin-top: 20px;
 }
 
+.redes a {
+  transition: all 0.4s 0s ease;
+}
+
+.redes a:hover {
+  transform: scale(1.2);
+}
+
 @media (max-width: 600px) {
   footer {
     flex-direction: column;
