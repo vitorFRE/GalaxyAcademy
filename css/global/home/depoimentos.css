@@ -1,5 +1,7 @@
 .depoimentos {
   text-align: center;
+  margin-top: 30px;
+  border-top: 2px solid #414141;
 }
 
 .depoimento img {
@@ -54,4 +56,10 @@
 
 .btn-slider.ativo {
   background: #ab292c;
+}
+
+@media (max-width: 600px) {
+  .depoimentos h1 {
+    margin-top: 50px;
+  }
 }

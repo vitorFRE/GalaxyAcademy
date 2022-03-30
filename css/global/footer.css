@@ -48,10 +48,9 @@ footer {
 }
 
 @media (max-width: 600px) {
-  footer {
+  .footer {
+    margin-top: 30px;
     flex-direction: column;
     gap: 50px;
-    justify-content: flex-start;
-    margin-top: 100px;
   }
 }
