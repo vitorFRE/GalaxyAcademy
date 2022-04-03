@@ -1,0 +1,45 @@
+.horarios {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.horarios-content li {
+  background-color: #262626;
+}
+
+.horarios div p:last-child {
+  margin-bottom: 30px;
+}
+
+.horarios-content img {
+  max-width: 266px;
+  transition: all 0.4s 0s ease;
+}
+
+.horarios-content img:hover {
+  transform: scale(1.1);
+}
+
+.horarios-content h2 {
+  margin-left: 20px;
+  margin-top: 15px;
+  font-size: 1.625rem;
+}
+
+.horarios-content p {
+  color: #b2b2b2;
+  font-size: 1rem;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+.hora-p {
+  margin-top: 25px;
+}
+
+.horarios span {
+  color: #fff;
+}

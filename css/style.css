@@ -12,5 +12,8 @@
 /* Unidades */
 @import url(./global/unidades/unidades.css);
 
+/* Horário */
+@import url(./global/horarios/horarios.css);
+
 /* Utilidades */
 @import url(./util/componentes.css);
