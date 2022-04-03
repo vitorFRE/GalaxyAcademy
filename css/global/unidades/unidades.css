@@ -1,0 +1,39 @@
+.unidade {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.unidades li {
+  background-color: #262626;
+}
+
+.unidades img {
+  max-width: 266px;
+}
+
+.unidades h2 {
+  margin-left: 25px;
+  margin-top: 15px;
+  font-size: 1.625rem;
+}
+
+.unidades p {
+  color: #b2b2b2;
+  font-size: 1.125rem;
+  margin-left: 25px;
+}
+
+.uni-p {
+  margin-top: 10px;
+}
+
+.unidades button {
+  margin-top: 30px;
+  margin-left: 25px;
+  font: 700 1rem/1 "Poppins", sans-serif;
+  margin-bottom: 20px;
+  cursor: pointer;
+}

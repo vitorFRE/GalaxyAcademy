@@ -9,5 +9,8 @@
 @import url(./global/home/planos.css);
 @import url(./global/home/depoimentos.css);
 
+/* Unidades */
+@import url(./global/unidades/unidades.css);
+
 /* Utilidades */
 @import url(./util/componentes.css);

@@ -8,7 +8,7 @@
 
 .introducao h1 {
   padding-top: 250px;
-  color: #db1c21;
+  color: #ab292c;
   text-transform: uppercase;
   font: 700 3.5rem/1 "Poppins", sans-serif;
 }
@@ -21,6 +21,7 @@
 
 .introducao a {
   background-color: #ab292c;
+  text-transform: uppercase;
   max-width: max-content;
   border-radius: 5px;
   padding: 10px 20px;

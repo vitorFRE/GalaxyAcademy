@@ -35,3 +35,51 @@ html {
 .btn-sub:hover {
   background-color: #933234;
 }
+
+/* btn-unidades */
+
+.btn-uni {
+  font-size: 1rem;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  padding: 10px 15px;
+  border: 3px solid #ab292c;
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  color: #ab292c;
+  text-decoration: none;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+.btn-uni:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: #ab292c;
+  z-index: -1;
+}
+
+.btn-uni:hover,
+.btn-uni:focus {
+  color: white;
+}
+
+.btn-uni:hover:before,
+.btn-uni:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.btn-uni:active {
+  transform: scale(0.9);
+}
